@@ -1,0 +1,225 @@
+body {
+    font-family: "Roboto", sans-serif !important;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background-position: center; */
+}
+
+#navbar {
+    background-color: rgb(236, 234, 234);
+}
+
+/* #navbar1 {
+    background-image: url('images/header.jpeg');
+} */
+.titreTaches{
+    max-width: 75%;
+}
+
+.suprimerTache {
+    width: 15px;
+    height: 18px;
+}
+
+#dropdownMenuButton1 {
+    border-radius: 5px 25px 5px 25px !important;
+    padding: 5px 15px;
+    font-size: 15px;
+    background-color: #815a9e;
+    color: aliceblue;
+}
+
+#dropdownMenuButton1:hover {
+    border-radius: 5px 25px 5px 25px !important;
+    padding: 5px 15px;
+    background-color: #6e4288;
+    color: aliceblue;
+}
+
+#formconn {
+    color: #000000;
+}
+
+body .itemScrumboard {
+    text-decoration: none;
+}
+
+#logo {
+    max-height: 80px;
+}
+
+.navbarrondi {
+    margin: 15px auto;
+    background-color: #c9c1c9;
+    border-radius: 55px;
+    padding: 15px 35px;
+}
+
+@media screen and (min-width: 768px) {
+    .navbarrondi {
+        min-width: 80%;
+    }
+    #dropdownMenuButton1 {
+        font-size: 25px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .navbarrondi {
+        min-width: 70%;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .navbarrondi {
+        min-width: 60%;
+    }
+}
+
+body .transparent {
+    padding: 15px; 
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#traitement {
+    background-color: #815a9e !important;
+}
+
+.progress-container {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    padding: 3px;
+    margin: 15px 0;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.progress-bar-custom {
+    height: 20px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    transition: width 0.6s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-bar-custom::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(230, 230, 230, 0.3), transparent);
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+.progress-text {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.card.transparent {
+    backdrop-filter: blur(10px);
+    background-color: rgba(230, 230, 230, 0.5);
+    border: 1px solid rgba(230, 230, 230, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-header {
+    flex-shrink: 0;
+}
+
+.card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-footer {
+    flex-shrink: 0;
+    margin-top: auto;
+}
+
+#addScrumboard {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #79578c;
+    border-radius: 15px;
+    font-size: 80px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+#bar {
+    background-color: linear-gradient(45deg, #ac78d2ff, #5b3876ff);
+}
+
+.etat {
+    width: 300px;
+}
+
+.tache p {
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.tache {
+    text-decoration: none;
+}
+
+.tache .tempsPasse, .tache .estimation {
+    font-size: 12px;
+}
+
+.ajouterButton {
+    /* border-radius: 5px 25px 5px 25px !important; */
+    padding: 5px 15px;
+    font-size: 15px;
+    background-color: #815a9e !important;
+    color: aliceblue !important;
+}
+
+.ajouterButton:hover {
+    /* border-radius: 5px 25px 5px 25px !important; */
+    padding: 5px 15px;
+    background-color: #6e4288 !important;
+    color: aliceblue !important;
+}
+
+.modifierTache {
+    margin-right: 5px;
+    max-width: 23px;
+    max-height: 23px;
+}
+
+.tache .fleche {
+    width: 30px;
+    height: auto;
+    margin: 5px 8px;
+}
+
+.tache .fleche.previous {
+    transform: rotate(180deg);
+}
